@@ -95,26 +95,29 @@ function game(){
  }   
 }
 
-//game();
 
 
 const btnRock= document.querySelector('#rock');
 const btnPaper= document.querySelector('#paper');
 const btnScissors= document.querySelector('#scissors');
     
-   btnRock.addEventListener('click', ()=>{
+      
+        btnRock.addEventListener('click', ()=>{
    
-   console.log(playRound(rock,getComputerChoice()),);
+            result.textContent=playRound(rock,getComputerChoice());
    
-   });
-   btnPaper.addEventListener('click', ()=>{
-   
-    console.log(playRound(paper,getComputerChoice()));
- 
-    }); btnScissors.addEventListener('click', ()=>{
-   
-        console.log(playRound(scissors,getComputerChoice()));
-     
-        });
+   });btnPaper.addEventListener('click', ()=>{
 
+    result.textContent=playRound(paper,getComputerChoice());
+ 
+    });btnScissors.addEventListener('click', ()=>{
+   
+        result.textContent= playRound(scissors,getComputerChoice());
+     
+    });
+
+
+    
+const result = document.querySelector('.result');
+result.classList.toggle('result');
 

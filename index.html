@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <script src ="script.js" defer></script>
-
+   <link rel="stylesheet"  href="style.css">
  
 
 </head>
-<body>
+<body id ="body">
+    <div class="mainBox">
     
-    <button id = "rock">Rock</button>
-    <button id = "paper">Paper</button>
-    <button id = "scissors">Scissors</button>
-    <div class="rounds"></div>
-    <div class="result"></div>
-    <button onclick="reset()">Try Again</button>
+        <div class="button">        
+            <button id = "rock">Rock</button>
+            <button id = "paper">Paper</button>
+            <button id = "scissors">Scissors</button>
+            <button onclick="reset()"> Reset</button>
+        </div>
+    
+    <div class="text">
+        <div class="rounds"></div>
+        <div class="result"></div>
+    </div>
+   
+
 </body>
 </html>
